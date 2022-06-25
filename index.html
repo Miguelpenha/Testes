@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <button id="menu-button" onclick="showOrHiddenMenu()">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M0 0h24v24H0V0z" fill="none"/>
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+        </svg>
+    </button>
+    <div id="menu" class="hidden">
+        <nav>
+            <a href="#bubble-gradient">
+                <span>Bubble Gradient</span>
+                <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24">
+                    <g>
+                        <path d="M0,0h24v24H0V0z" fill="none"/>
+                    </g>
+                    <g>
+                        <polygon points="6.23,20.23 8,22 18,12 8,2 6.23,3.77 14.46,12"/>
+                    </g>
+                </svg>
+            </a>
+            <a href="#neon-effect">
+                <span>Neon Effect</span>
+                <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24">
+                    <g>
+                        <path d="M0,0h24v24H0V0z" fill="none"/>
+                    </g>
+                    <g>
+                        <polygon points="6.23,20.23 8,22 18,12 8,2 6.23,3.77 14.46,12"/>
+                    </g>
+                </svg>
+            </a>
+            <a href="#slide-effect">
+                <span>Slide Effect</span>
+                <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24">
+                    <g>
+                        <path d="M0,0h24v24H0V0z" fill="none"/>
+                    </g>
+                    <g>
+                        <polygon points="6.23,20.23 8,22 18,12 8,2 6.23,3.77 14.46,12"/>
+                    </g>
+                </svg>
+            </a>
+            <a href="#gradient-button">
+                <span>Gradient Button</span>
+                <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24">
+                    <g>
+                        <path d="M0,0h24v24H0V0z" fill="none"/>
+                    </g>
+                    <g>
+                        <polygon points="6.23,20.23 8,22 18,12 8,2 6.23,3.77 14.46,12"/>
+                    </g>
+                </svg>
+            </a>
+        </nav>
+    </div>
+    <div class="container-bubble-gradient" id="bubble-gradient">
+        <div class="circle">
+            <h1>Bubble Gradient</h1>
+        </div>
+    </div>
+    <div class="container-neon-effect" id="neon-effect">
+        <h1 class="title">Neon Effect</h1>
+    </div>
+    <div class="container-slide-effect" id="slide-effect">
+        <h1 class="title">Slide Effect</h1>
+    </div>
+    <div class="container-gradient-button" id="gradient-button">
+        <div class="bg-image">
+            
+        </div>
+        <button>Fale conosco</button>
+    </div>
+    <script>
+        function showOrHiddenMenu() {
+            const menu = window.document.getElementById('menu')
+
+            if (menu.className === 'hidden') {
+                menu.className = ''
+            } else {
+                menu.style.animation = 'hiddenRight 1s'
+                
+                setTimeout(() => {
+                    menu.className = 'hidden'
+                    menu.style.animation = 'showLeft 1s'
+                }, 1000)
+            }
+        }
+    </script>
+</body>
+</html>

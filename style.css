@@ -155,11 +155,11 @@ body {
     display: flex;
     transition-duration: 0.1s;
     transition-timing-function: linear;
-    background: linear-gradient(-45deg, #17170e, #c9ad37);
+    background: linear-gradient(-45deg, #0d6ee3, #d70e0e);
     background-color: #000000;
     background-size: 400% 400%;
     background-position: 0% 50%;
-    animation: gradient 15s linear infinite;
+    animation: gradient 12s linear infinite;
 }
 
 @keyframes gradient {
@@ -184,10 +184,10 @@ body {
     justify-content: center;
     display: flex;
     overflow: hidden;
-    animation: gradient2 15s linear infinite;
+    animation: gradient2 12s linear infinite;
     animation: morph 3s linear infinite;
     border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
-    background: linear-gradient(-45deg, #17170e, #c9ad37);
+    background: linear-gradient(-45deg, #0d6ee3, #d70e0e);
     background-color: #000000;
     background-size: 400% 400%;
     background-position: 100% 50%;
@@ -224,14 +224,14 @@ body {
 .container-bubble-gradient>.circle>h1 {
     color: #ffffff;
     font-size: 2vw;
-    background: linear-gradient(-45deg, #17170e, #c9ad37);
+    background: linear-gradient(-45deg, #0d6ee3, #d70e0e);
     -webkit-text-fill-color: transparent;
     background-clip: text;
     background-size: 400% 400%;
     background-position: 0% 50%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    animation: gradient 15s linear infinite;
+    animation: gradient 12s linear infinite;
 }
 
 .container-neon-effect {

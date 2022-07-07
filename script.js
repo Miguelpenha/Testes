@@ -15,17 +15,30 @@ function showOrHiddenMenu() {
 
 function loadImages() {
     const images = document.querySelectorAll('.container-images-grid>.column>img')
+    let countImages = 0
 
     for (let image of images) {
         image.style.visibility = 'hidden'
+        
+        countImages++
     }
-
-    setInterval(() => {
+        
+    const verifyImage = setInterval(() => {
         for (let image of images) {
-            if (image.getBoundingClientRect().top <= window.innerHeight) {
+            if (image.style.visibility === 'hidden' && image.getBoundingClientRect().top <= window.innerHeight) {
                 image.style.animation = 'bottomOnTop 1s linear'
                 image.style.visibility = 'visible'
+                
+                setTimeout(() => {
+                    image.style.animation = ''
+                }, 1000)
+
+                countImages--
             }
+        }
+
+        if (countImages <= 0) {
+            clearInterval(verifyImage)
         }
     }, 500)
 }

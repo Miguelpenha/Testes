@@ -490,6 +490,7 @@ body {
 .container-images-grid>.column>img {
     width: 90%;
     margin: 5%;
+    border: none;
     cursor: pointer;
     border-radius: 25px;
     transition-duration: 0.2s;
@@ -510,11 +511,13 @@ body {
     transform: scale(0.98);
     filter: brightness(0.8);
     animation: floatImage 1s infinite linear;
+    box-shadow: 0 5px 15px rgb(0 0 0 / 30%);
 }
 
 @keyframes floatImage {
     50% {
         transform: scale(0.95);
+        box-shadow: 0 5px 15px rgb(0 0 0 / 80%);
     }
 
     100% {

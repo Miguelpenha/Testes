@@ -4,7 +4,7 @@ function showOrHiddenMenu() {
     if (menu.className.includes('hidden')) {
         menu.classList.remove('hidden')
     } else {
-        menu.style.animation = 'hiddenRight 1s'
+        menu.style.animation = 'hiddenRight 2s'
         
         setTimeout(() => {
             menu.classList.add('hidden')
